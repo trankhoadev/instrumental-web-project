@@ -272,32 +272,35 @@ img {
   justify-content: flex-end;
   align-items: center;
 }
-.container-form-cart .form .form-content__mainRedirect .mainRedirect-button button {
+.container-form-cart .form .form-content__mainRedirect .mainRedirect-button a {
   padding: 10px 15px;
   border-radius: 5px;
+  text-decoration: none;
 }
 .container-form-cart .form .form-content__mainRedirect .mainRedirect-button__first {
   margin: 0 1%;
+}
+.container-form-cart .form .form-content__mainRedirect .mainRedirect-button__first a {
   background-color: #10182f;
   color: #fff;
 }
-.container-form-cart .form .form-content__mainRedirect .mainRedirect-button__first:hover {
+.container-form-cart .form .form-content__mainRedirect .mainRedirect-button__first a:hover {
   background-color: #303c5d;
   transition: all ease .3s;
 }
-.container-form-cart .form .form-content__mainRedirect .mainRedirect-button__first:active {
+.container-form-cart .form .form-content__mainRedirect .mainRedirect-button__first a:active {
   background-color: #1a1011;
   transition: all ease 0s;
 }
-.container-form-cart .form .form-content__mainRedirect .mainRedirect-button__second {
+.container-form-cart .form .form-content__mainRedirect .mainRedirect-button__second a {
   background-color: #eb3349;
   color: #fff;
 }
-.container-form-cart .form .form-content__mainRedirect .mainRedirect-button__second:hover {
+.container-form-cart .form .form-content__mainRedirect .mainRedirect-button__second a:hover {
   background-color: #f35b43;
   transition: all ease .3s;
 }
-.container-form-cart .form .form-content__mainRedirect .mainRedirect-button__second:active {
+.container-form-cart .form .form-content__mainRedirect .mainRedirect-button__second a:active {
   background-color: #b62b3b;
   transition: all ease 0s;
 }
