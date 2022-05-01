@@ -569,6 +569,17 @@ img {
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
+
+                            h4 {
+                              font-weight: 600;
+                              font-size: 1.6em;
+                            }
+
+                            span#total-price {
+                              font-weight: 600;
+                              color: #eb3349;
+                              font-size: 1.2em;
+                            }
                         }
 
                         &__submit {
@@ -576,6 +587,8 @@ img {
                             justify-content: flex-end;
                             align-items: center;
                             button#btn-order {
+                              margin: 2em 0;
+                              a {
                                 text-align: right;
                                 color: #fff;
                                 margin-top: 2em;
@@ -586,6 +599,7 @@ img {
                                 font-weight: 600;
                                 padding: 8px 15px;
                                 border-radius: 3px;
+                                text-decoration: none;
                                 &:hover {
                                     background-color: #f35b43;
                                     transition: all ease .3s;
@@ -594,6 +608,7 @@ img {
                                     background-color: #b62b3b;
                                     transition: all ease 0s;
                                 }
+                              }
                             }
                         }
                     }

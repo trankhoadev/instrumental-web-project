@@ -1,7 +1,3 @@
-
-
-
-
 var city_arr = {
     "26": {
         "name": "Vĩnh Phúc",

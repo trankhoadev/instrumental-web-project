@@ -356,12 +356,24 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+.container-form-payment .form .form-content__payment .payment-total .box-total__item h4 {
+  font-weight: 600;
+  font-size: 1.6em;
+}
+.container-form-payment .form .form-content__payment .payment-total .box-total__item span#total-price {
+  font-weight: 600;
+  color: #eb3349;
+  font-size: 1.2em;
+}
 .container-form-payment .form .form-content__payment .payment-total .box-total__submit {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 .container-form-payment .form .form-content__payment .payment-total .box-total__submit button#btn-order {
+  margin: 2em 0;
+}
+.container-form-payment .form .form-content__payment .payment-total .box-total__submit button#btn-order a {
   text-align: right;
   color: #fff;
   margin-top: 2em;
@@ -372,12 +384,13 @@ img {
   font-weight: 600;
   padding: 8px 15px;
   border-radius: 3px;
+  text-decoration: none;
 }
-.container-form-payment .form .form-content__payment .payment-total .box-total__submit button#btn-order:hover {
+.container-form-payment .form .form-content__payment .payment-total .box-total__submit button#btn-order a:hover {
   background-color: #f35b43;
   transition: all ease .3s;
 }
-.container-form-payment .form .form-content__payment .payment-total .box-total__submit button#btn-order:active {
+.container-form-payment .form .form-content__payment .payment-total .box-total__submit button#btn-order a:active {
   background-color: #b62b3b;
   transition: all ease 0s;
 }

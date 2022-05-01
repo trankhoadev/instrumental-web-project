@@ -8,13 +8,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="">
         <meta name="description" content="">
-        <title>Thanh toán và Vận chuyển</title>
+        <title>Madara DEMO</title>
 
         <!-- CSS FROM PAGE MAIN -->
         <link rel="stylesheet" href="css/index.css">
 
         <!-- MAIN CSS --> <!-- need config here -->
-        <link rel="stylesheet" href="css/payment.css">
+        <link rel="stylesheet" href="css/completed.css">
 
         <!-- BS4 -->
         <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
@@ -173,7 +173,7 @@
                             <div class="main-nav__category">
                                 <a href="/index.html">Trang chủ</a>
                                 <span> >> </span>
-                                <p>Thanh toán</p>
+                                <p>Hoàn tất</p>
                             </div>
         
                             <div class="main-nav__login">
@@ -191,154 +191,65 @@
 
         <!-- FORM LOGIN START -->
         <span class="bg"></span>
-        <div class="container-form-payment">
+        <div class="container-form-completed">
             <div class="form">
-                <div class="form-header">
-                    <h2>Thanh toán</h2>
+                <div class="alert alert-success fade in">
+                    <i class="fa-fw fa fa-check"></i>
+                    <strong>Success! </strong>
+                    <span>Đơn hàng của bạn đã được đặt thành công</span>
                 </div>
 
-                <div class="form-content">
-                    <div class="form-content__progress">
-                        
-                        <div class="progress-item first-step">
-                            <i class="fal fa-cart-plus"></i>
-                            <p>Giỏ hàng của tôi</p>
-                            <span>
-                                <a>1</a>
-                            </span>
-                        </div>
-
-                        <span class="span-control span-control-first">
-                            >>
-                        </span>
-
-                        <div class="progress-item second-step">
-                            <i class="fal fa-dollar-sign"></i>
-                            <p>Thanh toán</p>
-                            <span>
-                                <a>2</a>
-                            </span>
-                        </div>
-
-                        <span class="span-control span-control-second">
-                            >>
-                        </span>
-
-                        <div class="progress-item third-step">
-                            <i class="fal fa-check"></i>
-                            <p>Hoàn tất</p>
-                            <span>
-                                <a>3</a>
-                            </span> 
-                        </div>
-                    
+                <div class="order-details">
+                    <div class="order-details__header">
+                        <h3>Mã đơn hàng của bạn: #100000139</h3>
                     </div>
-                    
-                    <div class="form-content__payment">
-                        <!-- 1 -->
-                        <div class="payitem payment-address">
-                            <div class="payitem-head">
-                                <h4>1. Địa chỉ giao hàng</h4>
-                            </div>
+                    <div class="order-details__date">
+                        <strong>Ngày đặt: </strong> 
+                        <span>01/05/2022</span>
+                    </div>
+                    <div class="order-details__paymentmethods">
+                        <strong>Phương thức thanh toán: </strong>
+                        <span>Thanh toán trực tiếp khi nhận hàng</span>
+                    </div>
+                    <div class="order-details__table">
+                        <h2>Thông tin đơn hàng</h2>
 
-                            <div class="payitem-content">
-                                <h3>Thông tin thanh toán</h3>
+                        <table class="table">
+                            <tr>
+                                <th>Stt</th>
+                                <th>Tên sản phẩm</th>
+                                <th>Đơn giá</th>
+                                <th>Số lượng</th>
+                                <th>Thành tiền</th>
+                            </tr>
 
-                                <input type="text" class="form-control" placeholder="Họ & Tên">
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                        </table>
+                    </div>
 
-                                <input type="text" class="form-control" placeholder="Số điện thoại">
-
-                                <input type="text" class="form-control" placeholder="Email">
-
-                                <input type="text" class="form-control" placeholder="Địa chỉ">
-
-                                <select name="" id="" class="form-control">
-                                    <option value="0" selected>Vui lòng chọn tỉnh/thành phố</option>
-                                </select>
-
-                                <select name="" id="" class="form-control">
-                                    <option value="0" selected>Vui lòng chọn quận/huyện</option>
-                                </select>
-
-                                <textarea name="" id="" cols="40" rows="8" placeholder="Ghi chú đơn hàng"></textarea>
-                            </div>
-                        </div>
-
-                        <!-- 2 -->
-                        <div class="payitem payment-delivery">
-                            <div class="payitem-head">
-                                <h4>2. Vận chuyển</h4>
-                            </div>
-
-                            <div class="payitem-content">
-                                <h3>Phương thức thanh toán</h3>
-                                <select name="" id="" class="form-control">
-                                    <option selected value="0">Vui lòng chọn phương thức thanh toán</option>
-                                    <option value="1">Thanh toán trực tiếp khi nhận hàng</option>
-                                </select>
-
-                                <h3>Đơn vị vận chuyển</h3>
-                                <select name="" id="" class="form-control">
-                                    <option selected value="0">Vui lòng chọn đơn vị vận chuyển</option>
-                                    <option value="1">Viettel Post</option>
-                                    <option value="2">Giao hàng nhanh</option>
-                                    <option value="3">Giao hàng tiết kiệm</option>
-                                </select>
-                            </div>
-                        </div>
-                        
-                        <!-- 3 -->
-                        <div class="payitem payment-total">
-                            <div class="payitem-head">
-                                <h4>3. Thông tin đơn hàng</h4>
-                            </div>
-
-                            <div class="payitem-content">
-                                <h3>Chi tiết hóa đơn</h3>
-
-                                <!-- Just add box item if have any product want to add more -->
-                                <div class="box-item">
-                                    <div class="box-item__image">
-                                        <img src="/img/index/LastestMangaUpdate/Row1/1.jpg" alt="">
-                                    </div>
-                                    <div class="box-item__name">
-                                        <p>Name Demo x 1</p>
-                                    </div>
-                                    <div class="box-item__price">
-                                        <span>500.000đ</span>
-                                    </div>
-                                </div>
-
-                                <hr>
-
-                                <div class="box-total">
-                                    <div class="box-total__item">
-                                        <p>Thành tiền</p>
-                                        <span>500.000đ</span>
-                                    </div>
-
-                                    <div class="box-total__item">
-                                        <p>Phí vận chuyển</p>
-                                        <span>0đ</span>
-                                    </div>
-
-                                    <div class="box-total__item">
-                                        <h4>Thanh toán</h4>
-                                        <span id="total-price">500.000đ</span>
-                                    </div>
-
-                                    <div class="box-total__submit">
-                                        <button id="btn-order">
-                                            <a href="/completed.html">
-                                                ĐẶT HÀNG
-                                            </a>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="order-details__total">
+                        <p>Tổng thanh toán: </p>
+                        &nbsp;
+                        &nbsp;
+                        <span>500.000đ</span>
                     </div>
                 </div>
+            </div>
+            
+            <div class="redirect-wrapper">
+                <button class="redirect-wrapper__first">
+                    <a href="/index.html">Tiếp tục mua hàng</a>
+                </button>
+
+                <button class="redirect-wrapper__second">
+                    <a href="/completed.html">Đơn hàng của tối</a>
+                </button>
             </div>
         </div>
         <!-- FORM LOGIN END -->
