@@ -361,8 +361,6 @@ img {
         width: 100% !important;
         height: 100%;
       }
-      // border: 1px solid black;
-      // width: 600px;
       width: 50%;
       // height: 700px;
       height: 100%;
@@ -378,21 +376,19 @@ img {
           // justify-content: center;
           align-items: center;
         }
-        // @include sm {
-        //   margin-top: -40%;
-        // }
         h2, p {
           line-height: 30px;
         }
       }
   
       .main-form  {
-        input[type=text] {
+        input[type=text], [type=password], [type=date] {
           position: relative;
           margin: 20px 5px;
           width: 100% !important;
           height: 38px;
           caret-color: #306BF3;
+          color: #333;
           &::placeholder  {
             font-size: 110%;
             color: #545D7A;
@@ -452,10 +448,11 @@ img {
           }
   
           .prev-12  {
-            margin: 0px 5px!important;
+            margin: 10px 5px 0px 5px;
             padding: 0px !important;
             @include md {
               width: 100%;
+              margin: 20px 5px 0px 5px;
             }
             label {
               font-size: 1.1em;
@@ -470,6 +467,7 @@ img {
                 height: 38px;
               }
             }
+
             input.input-radio {
               font-size: 10px !important;
               @include md {
@@ -480,12 +478,24 @@ img {
               color: rgba(0,0,0,0.7);
             }
             .medi-4 {
-              display: flex !important;
-              justify-content: center;
-              align-items: center;
+              label {
+                display: flex;
+                @include md() {
+                  width: 100%;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  p {
+                    width: 50%;
+                  }
+
+                  input {
+                    width: 50%;
+                  }
+                }
+              }
               @include md {
-                display: grid !important;
-                grid-template-columns: 1fr 1fr;
+                width: 100%;
               }
               p {
                 margin-right: 5px;
@@ -536,8 +546,24 @@ img {
           color: #306BF3;
         }
         button  {
-            margin-top: 5em;
+          margin-top: 3em;
+          background-color: #eb3349;
+          border: 1px solid #eb3349;
           font-size: 110%;
+          outline: none;
+          &:hover {
+              background-color: #f35b43;
+              transition: all ease .3s;
+              border: 1px solid #f35b43;
+          }
+          &:active {
+              background-color: #b62b3b;
+              transition: all ease 0s;
+              border: 1px solid #b62b3b;
+          }
+          @include md {
+            margin-top: 5em;
+          }
         }
       }
     }

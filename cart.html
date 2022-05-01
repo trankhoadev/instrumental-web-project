@@ -13,8 +13,8 @@
         <!-- CSS FROM PAGE MAIN -->
         <link rel="stylesheet" href="css/index.css">
 
-        <!-- MAIN CSS -->
-        <link rel="stylesheet" href="css/signup.css">
+        <!-- MAIN CSS --> <!-- need config here -->
+        <link rel="stylesheet" href="css/cart.css">
 
         <!-- BS4 -->
         <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
@@ -166,28 +166,19 @@
 
         <!-- ****** Nav Start ****** -->
         <nav>
-            <div class="container container-login-form">
+            <div class="container container-nav">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="main-nav">
                             <div class="main-nav__category">
-                                <!-- <a class="nav-link" href="#">romace</a>
-                                <a class="nav-link" href="#">comedy</a>
-                                <a class="nav-link" href="#">shoujo</a>
-                                <a class="nav-link" href="#">drama</a>
-                                <a class="nav-link" href="#">school life</a>
-                                <a class="nav-link" href="#">shounen</a>
-                                <a class="nav-link" href="#">action</a>
-                                <a class="nav-link" href="#" id="more-hover">
-                                    more
-                                    <i class="fas fa-caret-right"></i>
-                                </a> -->
+                                <a href="/index.html">Trang chủ</a>
+                                <span> >> </span>
+                                <p>Giỏ hàng</p>
                             </div>
         
                             <div class="main-nav__login">
-                                <div class="login-start">
-                                    <!-- <a href="/login.html" class="a__login">Sign in</a> -->
-                                    <a href="login.html" class="a__login">Đăng nhập</a>
+                                <div class="main-nav__redirect">
+
                                 </div>
                             </div>
                         </div>
@@ -200,93 +191,78 @@
 
         <!-- FORM LOGIN START -->
         <span class="bg"></span>
-        <div class="container-form-signup">
+        <div class="container-form-cart">
             <div class="form">
                 <div class="form-header">
-                    <h1>Đăng kí</h1>
-                    <p>Nhanh chóng và dễ dàng.</p>
+                    <h2>Giỏ hàng của tôi</h2>
                 </div>
-                <form class="main-form" action="">
-                    <div class="row class-form">
-        
-                        <div class="col-md-12 prev-12">
-                            <label for="">Tên tài khoản</label>
-                            <input type="text" class="form-control" placeholder="Nhập tên tài khoản..." name="" id="">
-                            <i class="fas fa-exclamation-circle"></i>
-                        </div>
-        
-                        <div class="col-md-12 prev-12">
-                            <label for="">Mật khẩu</label>
-                            <input type="password" class="form-control" placeholder="Nhập mật khẩu..." name="" id="">
-                            <i class="fas fa-exclamation-circle"></i>
+
+                <div class="form-content">
+                    <div class="form-content__progress">
+                        
+                        <div class="progress-item first-step">
+                            <i class="fal fa-cart-plus"></i>
+                            <p>Giỏ hàng của tôi</p>
+                            <span>
+                                <a>1</a>
+                            </span>
                         </div>
 
-                        <div class="col-md-12 prev-12">
-                            <label for="">Số điện thoại</label>
-                            <input type="text" class="form-control" placeholder="Nhập số điện thoại..." name="" id="">
-                            <i class="fas fa-exclamation-circle"></i>
+                        <span class="span-control span-control-first">
+                            >>
+                        </span>
+
+                        <div class="progress-item second-step">
+                            <i class="fal fa-dollar-sign"></i>
+                            <p>Thanh toán</p>
+                            <span>
+                                <a>2</a>
+                            </span>
                         </div>
 
-                        <div class="col-md-12 prev-12">
-                            <label for="">Email</label>
-                            <input type="text" class="form-control" placeholder="Nhập địa chỉ email..." name="" id="">
-                            <i class="fas fa-exclamation-circle"></i>
+                        <span class="span-control span-control-second">
+                            >>
+                        </span>
+
+                        <div class="progress-item third-step">
+                            <i class="fal fa-check"></i>
+                            <p>Hoàn tất</p>
+                            <span>
+                                <a>3</a>
+                            </span> 
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="form-content__detailProduct">
+                        <table class="table">
+                            <tr>
+                                <th>Tên sản phẩm</th>
+                                <th>Giá</th>
+                                <th>Số lượng</th>
+                                <th>Thành tiền</th>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="form-content__mainRedirect">
+                        <div class="mainRedirect-totalMoney">
+                            <p>Tổng thanh toán: </p>
+                            <span>0đ</span>
                         </div>
 
-                
-                        <div class="col-md-12 prev-12">
-                            <div class="form-group">
-                                <label for="">Ngày sinh</label>
-                                <i id="i-date" class="fas fa-question-circle"></i>
-                                <br>
-                                <input min="1990-1-1" max="2025-12-31" type="date" id="date" class="form-control">
-                                <i id="i5" class="fas fa-exclamation-circle"></i>
-                                <p id="date-display"></p>
-                            </div>
-                        </div>
-        
-                        <div class="col-md-12 prev-12">
-                            <div class="form-group">
-                                <label style="margin-top: 20px;" for="">Giới tính</label>
-                                <i id="i-date" class="fas fa-question-circle"></i>
-                                <br>
-        
-                                <div class="col-md-4 col-xs-12 medi-4">
-                                 <label>
-                                     <p>Nam</p>
-                                     <input checked value="male" class="input-radio" type="radio" name="gender">
-                                 </label>    
-                                </div>
-        
-                                
-                                <div class="col-md-4 col-xs-12 medi-4">
-                                    <label>
-                                        <p>Nữ</p>
-                                        <input value="female" class = "input-radio" type="radio" name="gender">
-                                    </label>    
-                                </div>
-        
-                                <div class="col-md-4 col-xs-12 medi-4">
-                                    <label>
-                                        <p>Khác</p> 
-                                        <input value="custom" class = "input-radio" type="radio" name="gender">
-                                    </label> 
-                                </div>
-        
-                            </div>
+                        <div class="mainRedirect-button">
+                            <button class="mainRedirect-button__first">Tiếp tục mua hàng</button>
+                            <button class="mainRedirect-button__second">Tiến hành thanh toán</button>
                         </div>
                     </div>
-                </form>
-        
-                <div class="col-md-12 class-btn">
-                    <div class="row">
-                        <span>Bằng cách nhấp vào Đăng ký, bạn đồng ý với <a href="#">Điều khoản</a>, <a href="#">Chính sách dữ liệu</a> và <a href="#">Chính sách Cookie</a> của chúng tôi.</span>
-                    </div>
-                </div>
-        
-        
-                <div class="col-md-12 class-btn">
-                    <button class="btn btn-success">Đăng kí</button>
                 </div>
             </div>
         </div>

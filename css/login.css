@@ -97,6 +97,8 @@ img {
   flex-direction: column;
   width: 95%;
   height: 70vh;
+  margin: 0px auto;
+  margin-top: 0em;
 }
 .container-form-login .form {
   width: 50%;
@@ -128,20 +130,19 @@ img {
 .container-form-login .form .main-form {
   margin-top: 5em;
 }
-.container-form-login .form .main-form input[type=text] {
+.container-form-login .form .main-form input[type=text], .container-form-login .form .main-form input[type=password] {
   position: relative;
-  margin: 20px 5px;
   width: 100% !important;
   height: 38px;
   caret-color: #306BF3;
 }
-.container-form-login .form .main-form input[type=text]::placeholder {
+.container-form-login .form .main-form input[type=text]::placeholder, .container-form-login .form .main-form input[type=password]::placeholder {
   font-size: 110%;
   color: #545D7A;
   line-height: 40px;
   color: #111;
 }
-.container-form-login .form .main-form input[type=text]:focus {
+.container-form-login .form .main-form input[type=text]:focus, .container-form-login .form .main-form input[type=password]:focus {
   line-height: 40px;
   color: #111;
 }
@@ -198,6 +199,12 @@ img {
 }
 .container-form-login .form .main-form .form-group input {
   width: 100%;
+}
+@media screen and (max-width: 1023px) {
+  .container-form-login .form .main-form .form-group {
+    width: 90%;
+    margin: 2em auto;
+  }
 }
 .container-form-login .form .class-btn {
   margin: 0px 16% !important;

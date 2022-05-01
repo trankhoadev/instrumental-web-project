@@ -267,6 +267,8 @@ img {
   flex-direction: column;
   width: 95%;
   height: 70vh;
+  margin: 0px auto;
+  margin-top: 0em;
   .form {
     @include md {
       width: 100% !important;
@@ -299,9 +301,9 @@ img {
 
     .main-form  {
       margin-top: 5em;
-      input[type=text] {
+      input[type=text], input[type=password] {
         position: relative;
-        margin: 20px 5px;
+        // margin: 20px 5px;
         width: 100% !important;
         height: 38px;
         caret-color: #306BF3;
@@ -365,7 +367,6 @@ img {
       }
 
       .form-group {
-
           margin: 2em 0 0 0;
           label {
             font-size: 1.2em;
@@ -373,6 +374,11 @@ img {
           
           input {
             width: 100%;
+          }
+
+          @include md {
+            width: 90%;
+            margin: 2em auto;
           }
       }
     }
@@ -396,8 +402,6 @@ img {
         color: #306BF3;
       }
       button  {
-          //click b62b3b
-        // linear-gradient(270deg, #f35b43 0%, #eb3349 100%)
         margin-top: 2em;
         background-color: #eb3349;
         border: 1px solid #eb3349;

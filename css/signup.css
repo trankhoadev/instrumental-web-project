@@ -215,20 +215,21 @@ img {
 .container-form-signup .form .form-header h2, .container-form-signup .form .form-header p {
   line-height: 30px;
 }
-.container-form-signup .form .main-form input[type=text] {
+.container-form-signup .form .main-form input[type=text], .container-form-signup .form .main-form [type=password], .container-form-signup .form .main-form [type=date] {
   position: relative;
   margin: 20px 5px;
   width: 100% !important;
   height: 38px;
   caret-color: #306BF3;
+  color: #333;
 }
-.container-form-signup .form .main-form input[type=text]::placeholder {
+.container-form-signup .form .main-form input[type=text]::placeholder, .container-form-signup .form .main-form [type=password]::placeholder, .container-form-signup .form .main-form [type=date]::placeholder {
   font-size: 110%;
   color: #545D7A;
   line-height: 40px;
   color: #111;
 }
-.container-form-signup .form .main-form input[type=text]:focus {
+.container-form-signup .form .main-form input[type=text]:focus, .container-form-signup .form .main-form [type=password]:focus, .container-form-signup .form .main-form [type=date]:focus {
   line-height: 40px;
   color: #111;
 }
@@ -280,12 +281,13 @@ img {
   margin-bottom: 40px;
 }
 .container-form-signup .form .main-form .class-form .prev-12 {
-  margin: 0px 5px !important;
+  margin: 10px 5px 0px 5px;
   padding: 0px !important;
 }
 @media screen and (max-width: 1023px) {
   .container-form-signup .form .main-form .class-form .prev-12 {
     width: 100%;
+    margin: 20px 5px 0px 5px;
   }
 }
 .container-form-signup .form .main-form .class-form .prev-12 label {
@@ -312,15 +314,26 @@ img {
 .container-form-signup .form .main-form .class-form .prev-12 i {
   color: rgba(0, 0, 0, 0.7);
 }
-.container-form-signup .form .main-form .class-form .prev-12 .medi-4 {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
+.container-form-signup .form .main-form .class-form .prev-12 .medi-4 label {
+  display: flex;
+}
+@media screen and (max-width: 1023px) {
+  .container-form-signup .form .main-form .class-form .prev-12 .medi-4 label {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container-form-signup .form .main-form .class-form .prev-12 .medi-4 label p {
+    width: 50%;
+  }
+  .container-form-signup .form .main-form .class-form .prev-12 .medi-4 label input {
+    width: 50%;
+  }
 }
 @media screen and (max-width: 1023px) {
   .container-form-signup .form .main-form .class-form .prev-12 .medi-4 {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr;
+    width: 100%;
   }
 }
 .container-form-signup .form .main-form .class-form .prev-12 .medi-4 p {
@@ -359,8 +372,26 @@ img {
   color: #306BF3;
 }
 .container-form-signup .form .class-btn button {
-  margin-top: 5em;
+  margin-top: 3em;
+  background-color: #eb3349;
+  border: 1px solid #eb3349;
   font-size: 110%;
+  outline: none;
+}
+.container-form-signup .form .class-btn button:hover {
+  background-color: #f35b43;
+  transition: all ease .3s;
+  border: 1px solid #f35b43;
+}
+.container-form-signup .form .class-btn button:active {
+  background-color: #b62b3b;
+  transition: all ease 0s;
+  border: 1px solid #b62b3b;
+}
+@media screen and (max-width: 1023px) {
+  .container-form-signup .form .class-btn button {
+    margin-top: 5em;
+  }
 }
 
 input#color {
