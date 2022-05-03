@@ -147,6 +147,10 @@ body {
   word-wrap: normal;
   white-space: nowrap;
   font-size: 95%;
+  text-decoration: none;
+  pointer-events: none;
+  font-weight: 600;
+  font-size: 1.1em;
 }
 .container-fluid .container-f .left .logo-banner {
   top: 0px;
@@ -201,7 +205,7 @@ body {
 }
 .container-fluid .container-f .left .slide-bar .left-border ul li.item a {
   color: #f3e8e8;
-  font-size: 90%;
+  font-size: 100%;
   white-space: nowrap;
   height: 100% !important;
   display: flex;
@@ -230,7 +234,16 @@ body {
   right: 0px !important;
   top: 0px !important;
   position: absolute;
-  background-color: red;
+  height: auto;
+}
+.container-fluid .container-f .right .wrapper-main {
+  padding: 0 3%;
+  height: auto;
+}
+.container-fluid .container-f .right .wrapper-main .title-content h2 {
+  padding: 1em 0;
+  line-height: 35px;
+  font-weight: 600;
 }
 
-/*# sourceMappingURL=exploit-db.css.map */
+/*# sourceMappingURL=productadd.css.map */
