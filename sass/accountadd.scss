@@ -445,6 +445,20 @@ body {
                   color: #fff;
                 }
               }
+
+              .gender {
+                .wrap-gender {
+                    padding: 1em 3em;
+                    label {
+                        display: flex;
+                        flex-direction: row;
+                        width: 70px;
+                        justify-content: space-between;
+                        input {
+                        }
+                    }
+                }
+              }
             }
           }
         }

@@ -79,6 +79,10 @@ Table of contents
 
 
 /* Custom */
+body {
+  height: 200vh;
+}
+
 img {
   user-select: none;
 }
@@ -241,23 +245,173 @@ body {
   line-height: 35px;
   font-weight: 600;
 }
-.container-fluid .container-f .right .wrapper-main .wrap-content {
-  width: 100%;
-  height: auto;
+.container-fluid .container-f .right .wrapper-main .function-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-.container-fluid .container-f .right .wrapper-main .wrap-content .wrap-box {
-  padding: 0 5em;
+.container-fluid .container-f .right .wrapper-main .function-content .wrap-function {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
 }
-.container-fluid .container-f .right .wrapper-main .wrap-content .wrap-box .form-submit {
+.container-fluid .container-f .right .wrapper-main .function-content .wrap-function select {
+  width: 40%;
+  width: 150px;
+  max-width: 300px;
+  margin-left: 2%;
+  user-select: none;
+}
+.container-fluid .container-f .right .wrapper-main .function-content .wrap-function input {
+  width: 40%;
+  width: 150px;
+  max-width: 300px;
+  margin-left: 2%;
+  user-select: none;
+}
+.container-fluid .container-f .right .wrapper-main .function-content .wrap-function .function-select {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.container-fluid .container-f .right .wrapper-main .function-content .wrap-function .wrap-filter {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3em 0;
+  padding: 0 2em;
 }
-.container-fluid .container-f .right .wrapper-main .wrap-content .wrap-box .form-submit button {
-  padding: 10px 15px;
+.container-fluid .container-f .right .wrapper-main .function-content .wrap-function .wrap-filter button {
+  padding: 6px 35px;
+  background-color: #10182f;
+  color: #fff;
   border-radius: 3px;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.container-fluid .container-f .right .wrapper-main .function-content .wrap-function .wrap-filter button:hover {
+  background-color: #04293A;
+  transition: all ease .3s;
+}
+.container-fluid .container-f .right .wrapper-main .function-content .wrap-function .wrap-filter button:active {
+  background-color: #fff;
+}
+.container-fluid .container-f .right .wrapper-main .function-content .function-search {
+  width: 50%;
+}
+.container-fluid .container-f .right .wrapper-main .function-content .function-search .search-box {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.container-fluid .container-f .right .wrapper-main .function-content .function-search .search-box input {
+  width: 300px;
+  height: 40px;
+  border-radius: 3px;
+  cursor: text;
+  caret-color: #032ebe;
+  padding: 0px 18px;
+  outline: invert;
+  border: 1px solid #888888;
+}
+.container-fluid .container-f .right .wrapper-main .function-content .function-search .search-box i {
+  display: flex;
+  position: absolute;
+  z-index: 3;
+  justify-content: center;
+  align-items: center;
+  background-color: #eb3349;
+  width: 50px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  color: #fff;
+  height: 40px;
+  cursor: pointer;
+}
+.container-fluid .container-f .right .wrapper-main .function-content .function-search .search-box i:hover {
+  background-color: #b62b3b;
+  transition: .4s;
+}
+.container-fluid .container-f .right .wrapper-main .function-content .function-search .search-box i:active {
+  background-color: #fff;
+}
+.container-fluid .container-f .right .wrapper-main .wrap-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 4em 2em;
+}
+.container-fluid .container-f .right .wrapper-main .wrap-content .title-table {
+  padding: 1em 0;
+}
+.container-fluid .container-f .right .wrapper-main .wrap-content table thead {
+  background-color: #343a40;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.container-fluid .container-f .right .wrapper-main .wrap-content table tbody th {
+  text-transform: uppercase;
+}
+.container-fluid .container-f .right .wrapper-main .wrap-content table tbody tr {
+  /* row */
+}
+.container-fluid .container-f .right .wrapper-main .wrap-content table tbody tr td:last-child {
+  display: flex;
+  justify-content: flex-start;
+}
+.container-fluid .container-f .right .wrapper-main .wrap-content table tbody tr td:last-child a {
+  padding: 5px 25px;
+  border-radius: 3px;
+  text-decoration: none;
+  margin: 0 0 0 1em;
+}
+.container-fluid .container-f .right .wrapper-main .wrap-content table tbody tr td:last-child a.change {
+  background-color: #10182f;
   color: #fff;
 }
+.container-fluid .container-f .right .wrapper-main .wrap-content table tbody tr td:last-child a.change:hover {
+  background-color: #203239;
+  transition: all ease .3s;
+}
+.container-fluid .container-f .right .wrapper-main .wrap-content table tbody tr td:last-child a.change:active {
+  background-color: #fff;
+}
+.container-fluid .container-f .right .wrapper-main .wrap-content table tbody tr td:last-child a.remove {
+  background-color: #D82148;
+  color: #fff;
+}
+.container-fluid .container-f .right .wrapper-main .wrap-content table tbody tr td:last-child a.remove:hover {
+  background-color: #B33030;
+  transition: all ease .3s;
+}
+.container-fluid .container-f .right .wrapper-main .wrap-content table tbody tr td:last-child a.remove:active {
+  background-color: #fff;
+}
+.container-fluid .container-f .right .wrapper-main .wrap-total {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 2em;
+}
+.container-fluid .container-f .right .wrapper-main .wrap-total p {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-right: 5%;
+}
+.container-fluid .container-f .right .wrapper-main .wrap-total span {
+  color: #a8cf45;
+  font-size: 1.1em;
+  font-weight: 600;
+}
 
-/*# sourceMappingURL=productadd.css.map */
+/*# sourceMappingURL=turnover.css.map */

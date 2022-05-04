@@ -259,5 +259,14 @@ body {
   border-radius: 3px;
   color: #fff;
 }
+.container-fluid .container-f .right .wrapper-main .wrap-content .wrap-box .gender .wrap-gender {
+  padding: 1em 3em;
+}
+.container-fluid .container-f .right .wrapper-main .wrap-content .wrap-box .gender .wrap-gender label {
+  display: flex;
+  flex-direction: row;
+  width: 70px;
+  justify-content: space-between;
+}
 
-/*# sourceMappingURL=productadd.css.map */
+/*# sourceMappingURL=accountadd.css.map */
