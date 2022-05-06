@@ -551,6 +551,7 @@ body  {
             justify-content: flex-start;
             flex-wrap: wrap;
             .item-box {
+              position: relative;
               padding: 1% 3%;
               margin: 1% 2%;
               width: 20%;
@@ -565,6 +566,19 @@ body  {
 
               @include md {
                 width: 100%;
+              }
+              
+              .sale {
+                position: absolute;
+                top: 0%;
+                left: 0;
+                white-space: nowrap;
+                padding: 5px 10px;
+                border-radius: 3px;
+                border-top-left-radius: 8px;
+                z-index: -1;
+                background-color: #d0001b;
+                color: #fff;
               }
 
               .item-img {
@@ -613,12 +627,25 @@ body  {
                 .item-price {
                   display: flex;
                   flex-direction: row;
-                  justify-content: flex-end;
-                  color: #eb3349;
-                  font-weight: 600;
-                  font-size: 1.3em;
-                  padding: 3% 0;
-                  line-height: 25px;
+                  justify-content: space-between;
+
+                  .default-price {
+                    color: #888888;
+                    font-weight: 600;
+                    font-size: 1.1em;
+                    padding: 3% 0;
+                    line-height: 25px;
+                    text-decoration: line-through;
+                    text-decoration-color: #888888;
+                  }
+
+                  .discount {
+                    color: #eb3349;
+                    font-weight: 600;
+                    font-size: 1.4em;
+                    padding: 3% 0;
+                    line-height: 25px;
+                  }
                 }
               }
 

@@ -880,19 +880,26 @@ nav {
               flex-direction: column;
             }
             .summary-image {
-              background-color: #ffffff;
               padding: 4% 1.5%;
-              
+              width: 20%;
+              text-align: center;
               @include sm() {
+                width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                flex-direction: column;
               }  
 
+              .box-img {
+                z-index: 999999;
                 img {
-                    max-width: 193px;
-                    max-height: 278px;
+                  max-width: 193px;
+                  max-height: 278px;
+                  width: 100%;
+                  margin: 0px auto;
                 }
+              }
             }
 
             .summary-content__wrapper {

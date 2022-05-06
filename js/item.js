@@ -115,6 +115,37 @@ function getLength() {
     return data.length;
 }
 
+/* Animate for scroll item */
+$('#wrap-item').owlCarousel({
+    loop:true,
+    nav:true,
+    margin: 50,
+    autoplay: true,
+    autoplayTimeout:4000,
+    autoplayHoverPause: true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav: true
+        },
+
+        400:{
+            items:1,
+            nav: false
+        },
+
+        700:{
+            items:1,
+            nav: false
+        },
+
+        1000:{
+            items:1
+        }
+    }
+});
+
 /* Click */
 star_1.addEventListener('click', function() {
     star_1.style.color = '#ffd900';
@@ -260,3 +291,5 @@ function show_Chapter() {
         }
     }
 }
+
+
