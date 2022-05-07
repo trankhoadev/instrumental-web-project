@@ -453,6 +453,15 @@ img {
                 table {
                     width: 95%;
                     margin: 0px auto;
+                  tr {
+                    text-transform: uppercase;
+                    td {
+                      img {
+                        width: 100%;
+                        max-width: 70px;
+                      }
+                    }
+                  }
                 }
             }
 

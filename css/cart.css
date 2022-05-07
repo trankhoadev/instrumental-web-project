@@ -208,6 +208,11 @@ img {
       .container-form-cart .form .form-content__detailProduct table {
         width: 95%;
         margin: 0px auto; }
+        .container-form-cart .form .form-content__detailProduct table tr {
+          text-transform: uppercase; }
+          .container-form-cart .form .form-content__detailProduct table tr td img {
+            width: 100%;
+            max-width: 70px; }
     .container-form-cart .form .form-content__mainRedirect {
       display: flex;
       flex-direction: column;
