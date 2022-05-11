@@ -1304,12 +1304,13 @@ nav {
     .main-update {
       padding: 0 .5em;
       width: 100%;
+      white-space: nowrap;
       &__item {
         display: flex;
         flex-flow: row nowrap;
         transition: all ease .3s;
         padding: 0;
-        width: 23%;
+        width: 31%;
         margin: 1em .8em;
         background-color: #fff;
         overflow: hidden;
@@ -1343,33 +1344,15 @@ nav {
           width: 50%;
           overflow: hidden;
           position: relative;
-  
-  
-          &:hover > a.main-thumbnail {
-            transform: scale(1.1);
-          }
-  
           a.main-thumbnail {
             display: block;
-            transition: all ease .5s;
-            max-width: 125px;
+            transition: all ease .5s;          
             overflow: hidden;
-          }
-  
-          a.sub-thumbnail {
-            transition: all ease .3s;
-            display: block;
-            position: absolute;
-            top: 0;
-            z-index: 100;
-            left: -200px;
-    
             img {
-              width: 100%;
-              position: absolute;
-              height: 100%;
+              width: 150px;
+              height: 200px;
+              max-height: 180px;
             }
-  
           }
         }
   
