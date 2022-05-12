@@ -182,13 +182,25 @@
                             <div class="payitem-content">
                                 <h3>Thông tin thanh toán</h3>
 
-                                <input type="text" class="form-control" placeholder="Họ & Tên">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Họ & Tên" id="userName" onblur="checkUserName()">
+                                    <span class="text-danger" id="userError"></span>
+                                </div>
 
-                                <input type="text" class="form-control" placeholder="Số điện thoại">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Số điện thoại" id="phone" onblur="checkPhone()">
+                                    <span class="text-danger" id="phoneError"></span>
+                                </div>
 
-                                <input type="text" class="form-control" placeholder="Email">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Email" id="email" onblur="checkEmail()">
+                                    <span class="text-danger" id="emailError"></span>
+                                </div>
 
-                                <input type="text" class="form-control" placeholder="Địa chỉ">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Địa chỉ" id="address" onblur="checkAddress()">
+                                    <span class="text-danger" id="addressError"></span>
+                                </div>
 
                                 <select onchange="checkValue()" name="" id="city" class="form-control">
                                     <option value="0" selected>Vui lòng chọn thành phố bạn đang sống...</option>
@@ -235,7 +247,10 @@
                                     <option value="">Quận Nam Từ Liêm</option>
                                 </select>
 
-                                <textarea name="" id="" cols="40" rows="8" placeholder="Ghi chú đơn hàng"></textarea>
+                                <div class="form-group">
+                                    <textarea name="" id="note" cols="40" rows="8" placeholder="Ghi chú đơn hàng" onblur="checkNote()"></textarea>
+                                    <span class="text-danger" id="noteError"></span>
+                                </div>
                             </div>
                         </div>
 
@@ -247,18 +262,20 @@
 
                             <div class="payitem-content">
                                 <h3>Phương thức thanh toán</h3>
-                                <select name="" id="" class="form-control">
+                                <select name="" id="payment-select" class="form-control">
                                     <option selected value="0">Vui lòng chọn phương thức thanh toán</option>
                                     <option value="1">Thanh toán trực tiếp khi nhận hàng</option>
                                 </select>
+                                <span class="text-danger" id="paymentError"></span>
 
                                 <h3>Đơn vị vận chuyển</h3>
-                                <select name="" id="" class="form-control">
+                                <select name="" id="delivery-select" class="form-control">
                                     <option selected value="0">Vui lòng chọn đơn vị vận chuyển</option>
                                     <option value="1">Viettel Post</option>
                                     <option value="2">Giao hàng nhanh</option>
                                     <option value="3">Giao hàng tiết kiệm</option>
                                 </select>
+                                <span class="text-danger" id="deliveryError"></span>
                             </div>
                         </div>
                         
@@ -303,7 +320,7 @@
                                     </div>
 
                                     <div class="box-total__submit">
-                                        <button id="btn-order">
+                                        <button id="btn-order" onclick="checkSubmitData()">
                                             <a href="/completed.html">
                                                 ĐẶT HÀNG
                                             </a>

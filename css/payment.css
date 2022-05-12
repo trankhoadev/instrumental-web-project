@@ -296,18 +296,12 @@ img {
     margin: 0px auto;
   }
 }
-.container-form-payment .form .form-content__payment .payment-address input {
-  margin: 5% 0;
-}
-.container-form-payment .form .form-content__payment .payment-address select {
-  margin: 5% 0;
-}
 .container-form-payment .form .form-content__payment .payment-address textarea {
   border: 1px solid #ccc;
   border-radius: 5px;
   width: 100%;
   padding: 5px 10px;
-  margin: 0 0 2% 0;
+  margin: 4% 0 2% 0;
 }
 .container-form-payment .form .form-content__payment .payment-delivery {
   width: 30%;
