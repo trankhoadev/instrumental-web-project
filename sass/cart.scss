@@ -290,6 +290,33 @@ img {
 04. Main content
 ------------------------------------------------
 */
+.title-cart {
+  display: flex;
+  width: 100%;
+  padding: 0% 20%;
+  margin: 0px auto;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 40px;
+  button {
+    border-radius: 3px;
+    margin: 0 10px;
+    a {
+      padding: 10px 15px;
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+  button:nth-child(1) {
+    background-color: #205375;
+  }
+
+  button:nth-child(2) {
+    background-color: #112B3C;
+  }
+}
+
 .container-form-cart {
     display: flex !important;
     justify-content: center;
@@ -459,6 +486,12 @@ img {
                       img {
                         width: 100%;
                         max-width: 70px;
+                      }
+                      button {
+                        color: #fff;
+                        padding: 10px 15px;
+                        border-radius: 3px;
+                        background-color: #36AE7C;
                       }
                     }
                   }
